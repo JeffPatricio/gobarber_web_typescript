@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import GlobalStyle from './styles/global';
+
+import SignUp from './pages/SignUp';
 
 const App: React.FC = () => {
-  return <h1>OK</h1>
+  return (
+    <Fragment>
+      <GlobalStyle />
+      <SignUp />
+    </Fragment>
+  )
 }
 
 export default App;
